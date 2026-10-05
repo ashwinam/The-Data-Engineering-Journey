@@ -77,3 +77,23 @@ WHERE score BETWEEN 100 AND 500;
 SELECT *
 FROM customers
 WHERE country IN ('Germany', 'USA');
+
+-- Search Operator
+
+-- 1. Find all the customers whos first name starts with m
+
+SELECT *
+FROM customers
+WHERE firstname LIKE 'm%';
+
+-- 2. Find all the customers whose firstname ends with n
+
+SELECT *
+FROM customers
+WHERE firstname LIKE '%n';
+
+-- 3. FInd the customers whose firstname has 'r' in the 3rd position
+
+SELECT * 
+FROM customers
+WHERE firstname LIKE '__r%';
