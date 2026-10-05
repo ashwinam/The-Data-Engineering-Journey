@@ -1,0 +1,51 @@
+-- COMBINE THE DATA FROM EMPLOYEES & CUSTOMERS INTO ONE TABLE
+
+SELECT 
+	firstname,
+    lastname
+FROM customers
+UNION
+SELECT 
+	firstname,
+    lastname
+FROM employees;
+
+-- COMBINE THE DATA FROM EMPLOYEES AND CUSTOMERS INTO ONE TABLE, INCLUDING DUPLICATES
+
+SELECT 
+	firstname,
+    lastname
+FROM customers
+UNION ALL
+SELECT 
+	firstname,
+    lastname
+FROM employees;
+
+-- FIND EMPLOYEES WHO ARE NOT CUSTOMERS AT THE SAME TIME
+
+SELECT firstname,lastname
+FROM employees
+EXCEPT
+SELECT firstname, lastname
+FROM customers;
+
+-- FIND EMPLOYEES WHO ARE ALSO CUSTOMERS
+
+SELECT 
+	firstname,
+    lastname
+FROM employees
+INTERSECT
+SELECT 
+	firstname,
+    lastname
+FROM customers;
+
+-- ORDERS ARE STORED IN SEPERATE TABLES (ORDERS AND ORDERS ARCHIVE), COMBINE ALL ORDERS INTO ONE REPORT WITHOUT DUPLICATES
+
+SELECT *
+FROM orders
+UNION
+SELECT *
+FROM orders_archive;
