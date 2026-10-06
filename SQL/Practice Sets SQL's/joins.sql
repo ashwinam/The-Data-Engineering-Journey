@@ -28,13 +28,13 @@ LEFT JOIN orders AS o
 -- GET ALL CUSTOMERS ALONG WITH THEIR ORDERS, INCLUDING ORDERS WITHOUT MATCHING CUSTOMERS
 
 SELECT
-	c.id,
-    c.first_name,
-    o.order_id,
+	c.customerid,
+    c.firstname,
+    o.orderid,
     o.sales
 FROM customers AS c
 RIGHT JOIN orders AS o
-	ON o.customer_id = c.id;
+	ON o.customerid = c.customerid;
     
 -- GET ALL CUSTOMERS ALONG WITH THEIR ORDERS, INCLUDING ORDERS WITHOUT MATCHING CUSTOMERS (USING LEFT JOIN)
 

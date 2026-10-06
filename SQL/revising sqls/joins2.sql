@@ -56,4 +56,14 @@ SELECT
     o.orderstatus
 FROM customers c
 RIGHT JOIN orders o
-	ON c.customerid = o.customerid 
+	ON c.customerid = o.customerid ;
+    
+-- Left Anti Join
+-- Get all customers who havent placed any orders
+
+SELECT 
+	*
+FROM customers c
+LEFT JOIN orders o
+	ON c.customerid = o.customerid
+WHERE o.customerid IS NULL;
