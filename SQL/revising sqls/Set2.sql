@@ -49,3 +49,4 @@ SELECT
 	firstname,
     lastname
 FROM customers;
+
