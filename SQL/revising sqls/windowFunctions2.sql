@@ -49,3 +49,49 @@ SELECT
     RANK() OVER(ORDER BY SUM(sales) DESC) ranks
 FROM orders
 GROUP BY customerid;
+
+-- 7. rank the order based on their sales from highest to lowest
+
+SELECT 
+	orderid,
+    ROW_NUMBER() OVER(ORDER BY sales DESC) rank_orders
+FROM orders;
+
+-- TOP N Analysis
+
+-- 8. Find the Top highest sales for each product
+
+SELECT *
+FROM (
+SELECT 
+	orderid, 
+    orderdate,
+    productid,
+    sales,
+    RANK() OVER(PARTITION BY productid ORDER BY sales DESC) highest_sales_rank
+FROM orders) table_rank
+WHERE highest_sales_rank = 1;
+
+-- Bottom N Analysis
+
+-- 9. find the lowest 2 customer based on their total sales.
+
+SELECT *
+FROM (
+	SELECT 
+		customerid,
+		SUM(sales) total_sales,
+		RANK() OVER(ORDER BY SUM(sales)) rank_customers
+	FROM orders
+	GROUP BY customerid
+)t
+WHERE rank_customers <= 2;
+
+-- Generate Unique ids
+-- 10. Assign Unique ids to the rows of the orders archieve table
+
+SELECT 
+	*,
+    ROW_NUMBER() OVER() unique_ids
+FROM orders_archive;
+    
