@@ -94,4 +94,15 @@ SELECT
 	*,
     ROW_NUMBER() OVER() unique_ids
 FROM orders_archive;
-    
+
+
+-- IDENTIFY DUPLICATES
+-- identify duplicates rows in the table orders archieve and return a clean result without any duplicates
+
+SELECT *
+FROM (
+	SELECT
+		*,
+		ROW_NUMBER() OVER(PARTITION BY orderid ORDER BY orderid) rank_orders
+	FROM orders_archive)t
+WHERE rank_orders = 1;
