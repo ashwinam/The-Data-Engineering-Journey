@@ -105,3 +105,19 @@ Write a program that takes a string and reverses it (e.g., “Python” becomes 
 
 string = "Python"
 print(string[::-1])
+
+# Exercise 9
+""" 
+Vowel Frequency Counter
+
+Write a program to count the total number of vowels (a, e, i, o, u) present in a given sentence.
+"""
+
+count = 0
+sentence = "Learning Python is fun!"
+
+for each_char in sentence:
+    if each_char in 'aeiou':
+        count += 1
+
+print(count)
