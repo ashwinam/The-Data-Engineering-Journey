@@ -28,4 +28,14 @@ for i in range(10):
     print(f"Current Number {i} Previous Number {prev_num} Sum: {i + prev_num}")
 
     prev_num = i
-    
+
+
+# Exercise 3
+""" 
+String Indexing and Even Slicing
+
+Display only those characters which are present at an even index number in given string.
+"""
+
+string="pynative"
+print(string[::2])
