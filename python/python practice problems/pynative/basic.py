@@ -51,3 +51,16 @@ def remove_char(string, n):
     return string[n:]
 
 print(remove_char("pynative", 4))
+
+# Exercise 5
+""" 
+Variable Swapping (The In-Place Method)
+
+Write a program to swap the values of two variables, a and b, without using a third temporary variable.
+"""
+
+a = 5
+b = 10
+print("Before swap: ", a, b)
+a, b = b, a
+print("After swap: ", a, b)

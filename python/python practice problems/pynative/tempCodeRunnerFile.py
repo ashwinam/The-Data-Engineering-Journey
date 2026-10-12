@@ -1,5 +1,5 @@
-
-def remove_char(string, n):
-    return string[n:]
-
-print(remove_char("pynative", 4))
+a = 5
+b = 10
+print("Before swap: ", a, b)
+a, b = b, a
+print("After swap: ", a, b)
