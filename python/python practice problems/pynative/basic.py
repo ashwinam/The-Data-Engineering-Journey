@@ -64,3 +64,17 @@ b = 10
 print("Before swap: ", a, b)
 a, b = b, a
 print("After swap: ", a, b)
+
+# Exercise 6
+""" 
+Calculating Factorial with a Loop
+
+Write a program that calculates the factorial of a given number (e.g., 5!) using a for loop.
+"""
+
+factorial = 1
+num = 5
+for i in range(1, num + 1):
+    factorial *= i
+
+print(factorial)
