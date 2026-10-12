@@ -39,3 +39,15 @@ Display only those characters which are present at an even index number in given
 
 string="pynative"
 print(string[::2])
+
+# exercise 4
+""" 
+String Slicing and substring removal
+
+Write a function to remove characters from a string starting from index 0 up to n and return a new string.
+"""
+
+def remove_char(string, n):
+    return string[n:]
+
+print(remove_char("pynative", 4))
