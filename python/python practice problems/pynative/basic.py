@@ -22,10 +22,10 @@ Cumulative sum of range
 Iterate through the first 10 numbers (0–9). In each iteration, print the current number, the previous number, and their sum."""
 
 print("Printing current and previous number sum in a range(10)")
+prev_num = 0
 for i in range(10):
-    if i == 0:
-        prev_num = i
-    else:
-        prev_num = i - 1
+    x_sum = i + prev_num
     print(f"Current Number {i} Previous Number {prev_num} Sum: {i + prev_num}")
+
+    prev_num = i
     
