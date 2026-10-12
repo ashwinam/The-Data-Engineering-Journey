@@ -1,8 +1,4 @@
-count = 0
-sentence = "Learning Python is fun!"
+nums = [45, 2, 89, 12, 7]
 
-for each_char in sentence:
-    if each_char in 'aeiou':
-        count += 1
-
-print(count)
+print("Largest: ", max(nums))
+print("Smallest: ", min(nums))

@@ -121,3 +121,15 @@ for each_char in sentence:
         count += 1
 
 print(count)
+
+# Exercise 10
+""" 
+Finding Extremes (Min/Max) in a List
+
+Given a list of integers, find and print both the largest and the smallest numbers.
+"""
+
+nums = [45, 2, 89, 12, 7]
+
+print("Largest: ", max(nums))
+print("Smallest: ", min(nums))
