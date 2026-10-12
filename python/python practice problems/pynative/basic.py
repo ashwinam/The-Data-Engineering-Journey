@@ -95,3 +95,13 @@ print(fruits)
 
 fruits.pop(1)
 print(fruits)
+
+# Exercise 8
+""" 
+String Reversal
+
+Write a program that takes a string and reverses it (e.g., “Python” becomes “nohtyP”).
+"""
+
+string = "Python"
+print(string[::-1])
