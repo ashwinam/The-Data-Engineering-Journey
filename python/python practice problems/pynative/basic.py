@@ -78,3 +78,20 @@ for i in range(1, num + 1):
     factorial *= i
 
 print(factorial)
+
+# Exercise 7
+""" 
+List Manipulation: Add and Remove
+
+Create a list of 5 fruits. Add a new fruit to the end of the list, then remove the second fruit (at index 1).
+"""
+
+fruits = ['apple', 'orange', 'dragon fruit', 'chikku', 'banana']
+
+print(fruits)
+
+fruits.append("lichi")
+print(fruits)
+
+fruits.pop(1)
+print(fruits)

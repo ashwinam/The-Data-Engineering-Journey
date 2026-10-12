@@ -1,5 +1,9 @@
-answer = 1
-for i in range(1, 6):
-    answer *= i
+fruits = ['apple', 'orange', 'dragon fruit', 'chikku', 'banana']
 
-print(answer)
+print(fruits)
+
+fruits.append("lichi")
+print(fruits)
+
+fruits.pop(1)
+print(fruits)
