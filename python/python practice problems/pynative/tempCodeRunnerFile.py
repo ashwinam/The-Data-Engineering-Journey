@@ -1,4 +1,4 @@
-nums = [45, 2, 89, 12, 7]
 
-print("Largest: ", max(nums))
-print("Smallest: ", min(nums))
+data = [1, 2, 2, 3, 4, 4, 4, 5]
+
+print(list(set(data)))

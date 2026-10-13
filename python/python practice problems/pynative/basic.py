@@ -133,3 +133,15 @@ nums = [45, 2, 89, 12, 7]
 
 print("Largest: ", max(nums))
 print("Smallest: ", min(nums))
+
+
+# Exercise 11
+""" 
+Removing Duplicates from a List
+
+Write a script that takes a list containing duplicate items and returns a new list with only unique elements.
+"""
+
+data = [1, 2, 2, 3, 4, 4, 4, 5]
+
+print(list(set(data)))
