@@ -192,3 +192,15 @@ for i in str_x.split(" "):
 print(count)
 
 print(str_x.count("Emma"))
+
+# Exercise 15
+""" 
+Nested Loops for Pattern Generation
+
+Print the following pattern where each row contains a number repeated a specific number of times based on its value.
+"""
+
+for i in range(1, 6):
+    for j in range(i):
+        print(i, end="")
+    print()
