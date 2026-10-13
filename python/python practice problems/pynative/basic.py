@@ -218,3 +218,38 @@ def is_paliandrome(num):
     return int(str(num)[0]) == int(str(num)[-1])
 
 print("Result is: ", is_paliandrome(number))
+
+# Exercise 17
+""" 
+Merging Lists with Parity Filtering
+
+Create a new list from two given lists such that the new list contains odd numbers from the first list and even numbers from the second list.
+"""
+
+list1 = [10, 20, 25, 30, 35]
+list2 = [40, 45, 60, 75, 90]
+
+new_lst = []
+for i in list1:
+    if i % 2 != 0:
+        new_lst.append(i)
+
+for i in list2:
+    if i % 2 == 0:
+        new_lst.append(i)
+
+print(new_lst)
+
+# Exercise 18
+""" 
+Integer Digit Extraction and Reversal
+
+Write a program to extract each digit from an integer in the reverse order.
+"""
+
+number = 7536
+
+while number:
+    rem = number % 10
+    number = number // 10
+    print(rem, end="")
