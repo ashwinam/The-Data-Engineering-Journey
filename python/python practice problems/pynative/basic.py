@@ -161,3 +161,16 @@ def is_numbers_matched(num:list):
 
 print(f"Given list: {numbers_x} | result is {is_numbers_matched(numbers_x)}")
 print(f"Given list: {numbers_y} | result is {is_numbers_matched(numbers_y)}")
+
+# Exercise 13
+""" 
+Filtering Lists with Conditional Logic
+
+Iterate through a given list of numbers and print only those numbers which are divisible by 5.
+"""
+
+num_list = [10, 20, 33, 46, 55]
+
+for i in num_list:
+    if i % 5 == 0:
+        print(i)
