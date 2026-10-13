@@ -174,3 +174,21 @@ num_list = [10, 20, 33, 46, 55]
 for i in num_list:
     if i % 5 == 0:
         print(i)
+
+# Exercise 14
+""" 
+Substring Frequency Analysis
+
+Write a program to find how many times the substring “Emma” appears in a given string.
+"""
+
+str_x = "Emma is good developer. Emma is a writer"
+
+count = 0
+for i in str_x.split(" "):
+    if 'Emma' == i:
+        count += 1
+
+print(count)
+
+print(str_x.count("Emma"))
