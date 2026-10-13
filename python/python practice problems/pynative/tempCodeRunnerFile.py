@@ -1,4 +1,7 @@
-for i in range(1, 6):
-    for j in range(i):
-        print(i, end="")
-    print()
+
+number = 125
+
+def is_paliandrome(num):
+    return int(str(num)[0]) == int(str(num)[-1])
+
+print("Result is: ", is_paliandrome(number))
