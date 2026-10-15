@@ -294,3 +294,19 @@ for i in range(1, 11):
         print(i * j, end=" ")
     print()
 
+# Exercise 21
+""" 
+Downward Half-Pyramid Pattern
+
+Print a downward half-pyramid pattern using stars (*).
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+"""
+
+for i in range(5, 0, -1):
+    for j in range(i):
+        print("*", end="")
+    print()
