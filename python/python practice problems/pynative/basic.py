@@ -322,3 +322,24 @@ def exponent(base:int, exp:int):
     return base ** exp
 
 print(exponent(base = 2, exp = 5))
+
+# Exercise 23
+""" 
+Check Palindrome Number
+
+Write a program to check if a given number is a palindrome. A palindrome number remains the same when its digits are reversed (e.g., 121, 545).
+"""
+
+def check_paliandrome(num: int):
+    reverse_num = 0
+    original_num = num
+    while num:
+        rem = num % 10
+        num = num // 10
+
+        reverse_num = (reverse_num * 10) + rem
+
+    return original_num == reverse_num
+
+print(check_paliandrome(121))
+
