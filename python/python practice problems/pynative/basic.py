@@ -310,3 +310,15 @@ for i in range(5, 0, -1):
     for j in range(i):
         print("*", end="")
     print()
+
+# Exercise 22
+""" 
+Custom Exponentiation Function
+
+Write a function called exponent(base, exp) that returns an integer value of the base raised to the power of the exponent.
+"""
+
+def exponent(base:int, exp:int):
+    return base ** exp
+
+print(exponent(base = 2, exp = 5))

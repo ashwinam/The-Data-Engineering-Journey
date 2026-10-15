@@ -1,4 +1,4 @@
-for i in range(5, 0, -1):
-    for j in range(i):
-        print("*", end="")
-    print()
+def exponent(base:int, exp:int):
+    return base ** exp
+
+print(exponent(base = 2, exp = 5))
