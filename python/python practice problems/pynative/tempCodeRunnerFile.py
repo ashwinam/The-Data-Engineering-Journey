@@ -1,7 +1,4 @@
+list_a = [1, 2, 3, 4, 5]
+list_b = [4, 5, 6, 7, 8]
 
-dict1 = {"name": "Alice", "age": 25}
-dict2 = {"city": "New York", "job": "Engineer"}
-
-dict1.update(dict2)
-
-print(dict1)
+print(set(list_a).intersection(set(list_b)))
