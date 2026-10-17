@@ -1,4 +1,5 @@
-list_a = [1, 2, 3, 4, 5]
-list_b = [4, 5, 6, 7, 8]
+numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]
 
-print(set(list_a).intersection(set(list_b)))
+print("Odd list are: ", [number for number in numbers if number % 2 != 0])
+
+print("Even list are: ", [number for number in numbers if number % 2 == 0])
