@@ -400,3 +400,15 @@ numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]
 print("Odd list are: ", [number for number in numbers if number % 2 != 0])
 
 print("Even list are: ", [number for number in numbers if number % 2 == 0])
+
+# Exercise 29
+""" 
+Word Length Analysis
+
+Create a list of 5 words. Write a loop that iterates through the list and prints each word alongside its character count.
+"""
+
+words = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+
+for word in words:
+    print(f"{word} - {len(word)}")
