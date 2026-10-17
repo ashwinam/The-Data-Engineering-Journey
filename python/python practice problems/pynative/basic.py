@@ -412,3 +412,22 @@ words = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
 
 for word in words:
     print(f"{word} - {len(word)}")
+
+# Exercise 30
+""" 
+Word Frequency Counter (The Histogram)
+
+Write a program that counts how many times each word appears in a given paragraph and stores these counts in a dictionary.
+"""
+
+text = "apple banana apple cherry banana apple"
+
+histogram = {}
+
+for word in text.split(" "):
+    if word in histogram:
+        histogram[word] += 1
+    else:
+        histogram[word] = 1
+
+print(histogram)

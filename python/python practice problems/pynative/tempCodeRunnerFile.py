@@ -1,4 +1,11 @@
-words = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+text = "apple banana apple cherry banana apple"
 
-for word in words:
-    print(f"{word} - {len(word)}")
+histogram = {}
+
+for word in text.split(" "):
+    if word in histogram:
+        histogram[word] += 1
+    else:
+        histogram[word] = 1
+
+print(histogram)
