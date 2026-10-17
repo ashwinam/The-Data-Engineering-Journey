@@ -1,9 +1,7 @@
-prev = 0
-curr = 1
 
+dict1 = {"name": "Alice", "age": 25}
+dict2 = {"city": "New York", "job": "Engineer"}
 
-for _ in range(15):
-    print(prev, end=" ")
-    next = prev + curr
-    prev = curr
-    curr = next
+dict1.update(dict2)
+
+print(dict1)
