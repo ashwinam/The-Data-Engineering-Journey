@@ -343,3 +343,21 @@ def check_paliandrome(num: int):
 
 print(check_paliandrome(121))
 
+# Exercise 24
+""" 
+Generate Fibonacci Series
+
+Write a program to print the first 15 terms of the Fibonacci series. The sequence starts with 0 and 1, and each subsequent number is the sum of the two preceding ones.
+
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 
+"""
+
+prev = 0
+curr = 1
+
+
+for _ in range(15):
+    print(prev, end=" ")
+    next = prev + curr
+    prev = curr
+    curr = next
